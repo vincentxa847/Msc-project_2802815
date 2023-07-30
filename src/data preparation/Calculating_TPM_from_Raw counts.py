@@ -4,7 +4,7 @@ import subprocess
 
 ## Fetch the file name
 def file_path(experiment) :
-  directory = "C:/Users/user/Desktop/Project_Data/VeuPathPipeline/VeuPathPipeline/" + experiment
+  directory = "./VeuPathPipeline/VeuPathPipeline/" + experiment
   directory = directory + "/samplesOutput/"
   sample = os.listdir(directory)
   updated_list = [directory + s for s in sample]
@@ -66,7 +66,7 @@ import subprocess
 
 ## Normalisation, using the script to transform raw count to TPM
 def file_path() :
-    directory = "C:/Users/user/Desktop/Project_Data/ebiPipeline/ebiPipeline/"
+    directory = "./Project_Data/ebiPipeline/ebiPipeline/"
 
     # using dataset and srr number to iterate
     experiments = os.listdir(directory)
