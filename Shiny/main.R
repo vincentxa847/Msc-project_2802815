@@ -9,7 +9,7 @@ library(InteractiveComplexHeatmap) # for interactive heatmap
 # InteractiveComplexHeatmap [version 1.2.0]
 # dplyr [version 1.1.0]
 # shinycssloaders [version 1.0.0.9011]
-# DT [version]
+# DT [version 0.28]
 
 
 #### Set up data and function ####
