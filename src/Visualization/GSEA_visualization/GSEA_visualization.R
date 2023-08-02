@@ -5,7 +5,8 @@
 setwd("./schizont")
 
 test = data.frame()
-for (file in unique(as.character(schizont))) { # "schizont" here is the list containing all the samples belong to schzont stage
+# "schizont" here is the list containing all the samples belong to schzont stage, which is provided in "Dataset_directory" (change here for visualizing other stage) 
+for (file in unique(as.character(schizont))) {
   table <- openxlsx::read.xlsx(file)
   
   # set the p value threshold and pick the positive enrichment
@@ -25,7 +26,7 @@ ggplot(test,aes(x=factor(pathway),y=NES, colour=padj))+ geom_point() + theme_min
     position = position_nudge(y = 0.1),
     size = 5,
     show.legend = FALSE
-  ) + labs(x="",y="NES",title = "Schizont  (66 samples)") +
+  ) + labs(x="",y="NES",title = "Schizont  (66 samples)") + # change here for visualizing other stage 
   scale_colour_continuous(low="red", high="blue",
                           guide=guide_colorbar(reverse=TRUE))
 
