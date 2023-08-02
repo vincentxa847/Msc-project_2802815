@@ -31,6 +31,8 @@ ggplot(test,aes(x=factor(pathway),y=NES, colour=padj))+ geom_point() + theme_min
                           guide=guide_colorbar(reverse=TRUE))
 
 ## From the view of cluster [prefer this one]
+
+# change here to the GSEA directory 
 path = "C:/Users/user/Desktop/Project_Data/FigureANDTable/TableS1_k_means_clustering/GSEA_new_kmeans_15"
 setwd(path)
 all_files = list.files(path=path,recursive = TRUE) 
@@ -78,4 +80,4 @@ GSEA_visualization <- function(cluster, showDataset=30, font.size=4) {
            color = guide_colorbar(order = 3))
 }
 
-GSEA_visualization(12, showDataset=30, font.size = 6)
+GSEA_visualization(12, showDataset=30, font.size = 6) # change here for different cluster visualization 
