@@ -1,5 +1,5 @@
 # Msc-project_2802815
-## "project title (remain to be determine)"
+## Exploring clustering methods for summarizing disparate transcriptomic datasets
 ### 'Shiny' directory
 Contain the source codes of Shiny app and the necessary files for initializing app 
 
