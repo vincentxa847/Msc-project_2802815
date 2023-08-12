@@ -1,12 +1,14 @@
 ## Create sub directory to save the GSEA result table 
-dir.create("./GSEA_new_kmeans_11")
-setwd("./GSEA_new_kmeans_11")
-getwd() 
+dir.create("./GSEA_louvain_0.6")
+setwd("./GSEA_louvain_0.6")
+getwd()
+
+Matrix_normalized_excluded_removeanti<- readRDS(file="../../Data_Preparation/Matrix_normalized_excluded_removeanti.rds")
 
 ## cluster
-clusters <- kmeans_pca_normalized_11
+clusters <- readRDS(file="../../Louvain_clustering/louvain_0.6_new.rds")
 clusters <- as.character(clusters)
-names(clusters) <- names(kmeans_pca_normalized_11)
+names(clusters) <- colnames(Matrix_normalized_excluded_removeanti)
 clusters
 
 ## expression data
@@ -16,7 +18,7 @@ expression <- Matrix_normalized_excluded_removeanti
 # create a vector with empty list
 gseaList <- vector("list", length(unique(as.character(clusters))))
 for (cluster in unique(as.character(clusters))) {
-  geneList <- names(clusters[which(clusters == cluster)])
+  geneList <- names(clusters[which(clusters == cluster)]) # need to check if clusters is named chr 
   # push the geneList into list (in order)
   gseaList[[paste0('cluster', cluster)]] <- as.character(geneList)
 }
