@@ -1,4 +1,4 @@
-comp_normalized <- readRDS(file="comp_normalized.rds")
+comp_normalized <- readRDS(file="../PCA/comp_normalized.rds")
 
 Hierarchiral_clustering <- function(matrix,desired_number_of_groups) {
   
