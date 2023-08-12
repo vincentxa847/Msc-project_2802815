@@ -71,5 +71,8 @@ GOenrichment = function(data,which_cluster) {
 
 # saveRDS(GOenrichment, file = "GOenrichment.rds")
 
-# change the data and which_cluster for GO enrichment of different cluster
-GO_kmeans_15_1 <- GOenrichment(kmeans_pca_normalized_15,1)
+# Perform GO analysis
+clustering_result <- readRDS(file="../Louvain_clustering/louvain_0.6_new.rds")
+which_cluster <- 1
+GO <- GOenrichment(clustering_result,which_cluster)
+
