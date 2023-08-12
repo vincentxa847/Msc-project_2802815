@@ -25,7 +25,7 @@ create_matrix <- function(files) {
     # get the experiment group and sample information (as column of matrix) and gene name (as row of matrix) 
     string <- strsplit(file, "/")
     
-    experimentANDsample <- string[[1]][7]
+    experimentANDsample <- string[[1]][4]
     # run the check to replace srr or err number to condition
     for (check in seq_along(srr)) {
       k <- srr[check]
