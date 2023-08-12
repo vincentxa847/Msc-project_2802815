@@ -28,7 +28,7 @@ kmeans_Elbow <- function(data_used,number_of_clusters,nstart) {
     wcss[k] <- kmeans.results$tot.withinss
   }
   
-  Elbowplot <- plot(1:max_k,wcss,type = "b",xlab = "Number of clusters", ylab = "Within-Cluster Sum of Squares (WCSS)")
+  Elbowplot <- plot(1:max_k,wcss,type="b",xlab="Number of clusters", ylab="Within-Cluster Sum of Squares (WCSS)",cex.lab=1.2)
   
 }
 
@@ -44,14 +44,14 @@ kmeans_silhouette <- function(k){
 
 k <- 2:30
 avg_sil <- sapply(k, kmeans_silhouette)
-plot(k, type='b', avg_sil, xlab='Number of clusters', ylab='Average Silhouette Scores', frame=FALSE)
+plot(k, type='b', avg_sil, xlab='Number of clusters', ylab='Average Silhouette Scores', frame=FALSE,cex.lab=1.2)
 
 # another way to visualize silhouette (using factoextra)
 factoextra::fviz_nbclust(t(comp_normalized),kmeans,method="silhouette")
 
 ## Determine the number of clusters (Gap Statistic Method) 
 # compute gap statistic
-#' B integer, number of Monte Carlo (“bootstrap”) samples.
+#' B integer, number of Monte Carlo (bootstrap) samples.
 set.seed(123)
 # change thr B for parameter optimization (Start with a reasonable range of potential values for B, such as 10, 50, 100, 500, or 1000. )
 gap_stat <- cluster::clusGap(t(comp_normalized), FUN=kmeans, nstart=25,
@@ -62,10 +62,10 @@ factoextra::fviz_gap_stat(gap_stat)
 ## Function to perform k-means clustering 
 kmeans_clustering <- function(data,number_of_clusters){
   
-  distance_matrix = as.matrix(amap::Dist(t(data),method="euclidean"))
-  #　cluster by row, so transpose the matrix to assign cluster to genes
-  result = kmeans(distance_matrix,number_of_clusters,nstart=25,iter.max=1000)
-  cluster = result$cluster
+  distance_matrix <- as.matrix(amap::Dist(t(data),method="euclidean"))
+  # cluster by row, so transpose the matrix to assign cluster to genes
+  result <- kmeans(distance_matrix,number_of_clusters,nstart=25,iter.max=1000)
+  cluster <- result$cluster
   
   return(cluster)
   
@@ -73,4 +73,4 @@ kmeans_clustering <- function(data,number_of_clusters){
 
 ## Apply k-means with k =12 (change `number_of_clusters` to 9 and 15 for others result in report)
 # perform on expression matrix after dimensionality reduction (comp_normalized)
-kmeans_pca_normalized_10 = kmeans_clustering(comp_normalized,12)
+kmeans_pca_normalized <- kmeans_clustering(comp_normalized,12)
