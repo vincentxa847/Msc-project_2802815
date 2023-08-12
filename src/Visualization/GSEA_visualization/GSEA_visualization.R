@@ -1,12 +1,25 @@
-## From the view of dataset
-# set the working directory to GSEA directory
+## From the view of data sets
+# Fetch all available sets
+clinical_isolate <- readRDS("./Datasets_directory/clinical_isolate.rds")
+oocyst <- readRDS("./Datasets_directory/oocyst.rds")
+gametocyte <- readRDS("./Datasets_directory/gametocyte.rds")
+schizont <- readRDS("./Datasets_directory/schizont.rds")
+troph <- readRDS("./Datasets_directory/troph.rds")
+ring <- readRDS("./Datasets_directory/ring.rds")
+Asexual_blood_stage <- readRDS("./Datasets_directory/Asexual_blood_stage.rds")
+merozoite <- readRDS("./Datasets_directory/merozoite.rds")
+sporozoite <- readRDS("./Datasets_directory/sporozoite.rds")
 
-# change here for visualizing other stage 
-setwd("./schizont")
+
+
+list.dirs()
+path = "./GSEA_hclust_12/troph" # change here to the GSEA directory and interesting stage
+setwd(path)
+getwd()
 
 test = data.frame()
-# "schizont" here is the list containing all the samples belong to schzont stage, which is provided in "Dataset_directory" (change here for visualizing other stage) 
-for (file in unique(as.character(schizont))) {
+# "troph" here represents files corresponding to this stage
+for (file in unique(as.character(troph))) { # change here for other interesting stage
   table <- openxlsx::read.xlsx(file)
   
   # set the p value threshold and pick the positive enrichment
@@ -17,30 +30,28 @@ for (file in unique(as.character(schizont))) {
   
 }
 test$pathway = factor(test$pathway)
+library(ggplot2)
 ggplot(test,aes(x=factor(pathway),y=NES, colour=padj))+ geom_point() + theme_minimal() +
-			# change the font size for x axis label and title
-			theme(axis.text.x = element_text(size = 14),plot.title = element_text(size = 18)) +
-  stat_summary(
+	# change the font size for x axis label and title
+	theme(axis.text.x = element_text(size = 14),plot.title = element_text(size = 18)) +
+    stat_summary(
     fun.data = function(x) data.frame(y = max(x), label = length(x)),
     geom = "text",
     position = position_nudge(y = 0.1),
     size = 5,
     show.legend = FALSE
-  ) + labs(x="",y="NES",title = "Schizont  (66 samples)") + # change here for visualizing other stage 
-  scale_colour_continuous(low="red", high="blue",
-                          guide=guide_colorbar(reverse=TRUE))
+    ) + labs(x="",y="NES",title = "Schizont  (66 samples)") + # change here for visualizing other stages 
+  scale_colour_continuous(low="red", high="blue",guide=guide_colorbar(reverse=TRUE))
 
 ## From the view of cluster [prefer this one]
-
 # change here to the GSEA directory 
-path = "C:/Users/user/Desktop/Project_Data/FigureANDTable/TableS1_k_means_clustering/GSEA_new_kmeans_15"
+path = "C:/Users/user/Desktop/2802815_Msc_Project/GSEA/GSEA_hclust_12"
 setwd(path)
 all_files = list.files(path=path,recursive = TRUE) 
 
 GSEA_visualization <- function(cluster, showDataset=30, font.size=4) {
   
   cluster_ <- data.frame()
-  
   cluster <- paste0("cluster",as.character(cluster))
   
   for (file in unique(as.character(all_files))) {
@@ -80,4 +91,4 @@ GSEA_visualization <- function(cluster, showDataset=30, font.size=4) {
            color = guide_colorbar(order = 3))
 }
 
-GSEA_visualization(12, showDataset=30, font.size = 6) # change here for different cluster visualization 
+GSEA_visualization(12, showDataset=30, font.size = 10) # change here for different cluster visualization 
