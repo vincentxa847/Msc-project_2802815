@@ -4,7 +4,7 @@
 #' prcomp expects to see components (samples) by row and dimensions (genes) by column,
 #' turn off scale here
 
-Matrix_normalized_excluded_removeanti <- readRDS(file="Matrix_normalized_excluded_removeanti.rds")
+Matrix_normalized_excluded_removeanti <- readRDS(file="../Data_Preparation/Matrix_normalized_excluded_removeanti.rds")
 pca_normalized <- prcomp(t(Matrix_normalized_excluded_removeanti))
 
 PCA_ElbowPlot <- function(pca) {
