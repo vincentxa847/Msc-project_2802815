@@ -4,13 +4,14 @@
 
 library(ggplot2)
 
-comp_normalized <- readRDS(file="comp_normalized.rds")
-Matrix_normalized_excluded_removeanti <- readRDS(file="Matrix_normalized_excluded_removeanti.rds")
-
+comp_normalized <- readRDS(file="../PCA/comp_normalized.rds")
+Matrix_normalized_excluded_removeanti <- readRDS(file="../Data_Preparation/Matrix_normalized_excluded_removeanti.rds")
+cluster_to_see <- readRDS(file="../Louvain_clustering/louvain_0.6_new.rds")
+  
 ## Produce the umap coordinates for each genes
 umap_result_pca_normalized <- umap::umap(t(comp_normalized),n_neighbors=15,n_components=2)
-
 # saveRDS(umap_result_pca_normalized,file = "umap_coordinate.rds")
+
 umap_coordinate <- readRDS(file = "umap_coordinate.rds")
 
 ## Using UMAP to visualize clustering information 
@@ -40,8 +41,7 @@ UMAP_visualization <- function(umap_result,cluster_labels) {
   return(ggp)
 }
 
-# change cluster_labels for visualization of different clustering result
-UMAP_visualization(umap_coordinate,kmeans_pca_normalized_8)
+UMAP_visualization(umap_coordinate,cluster_to_see) 
 
 ## Using ComplexHeatmap, this package intergrates clustering and plotting 
 library("ComplexHeatmap")
@@ -55,8 +55,8 @@ my_palette <- colorRampPalette(c("#C25160", "#5AA4AE","#806D9A","#4F794A","#0643
 #' change the column_split and anno_block when visualizing different result
 
 Heatmap(Matrix_normalized_excluded_removeanti,name="TPM",
-        column_split=kmeans_pca_normalized_30,show_column_dend=FALSE,
+        column_split=cluster_to_see,show_column_dend=FALSE,
         cluster_rows=TRUE,show_row_dend=FALSE,
         show_row_names=FALSE,
         show_column_names=FALSE,
-        top_annotation=HeatmapAnnotation(foo=anno_block(gp=gpar(fill=my_palette(30)))))
+        top_annotation=HeatmapAnnotation(foo=anno_block(gp=gpar(fill=my_palette(length(unique(cluster_to_see)))))))
