@@ -15,23 +15,23 @@ library(InteractiveComplexHeatmap) # for interactive heatmap
 #### Set up data and function ####
 
 ## GO enrichment 
-geneId2GO <- readRDS(file="geneId2GO.rds")
-GOenrichment <- readRDS(file="GOenrichment.rds")
+geneId2GO <- readRDS(file="./data/geneId2GO.rds")
+GOenrichment <- readRDS(file="./data/GOenrichment.rds")
 
-data <- readRDS(file="comp_normalized.rds") # first 200 PCs of normalized data 
-original_matrix <- readRDS("Matrix_normalized_excluded_removeanti.rds")
+data <- readRDS(file="./data/comp_normalized.rds") # first 200 PCs of normalized data 
+original_matrix <- readRDS("./data/Matrix_normalized_excluded_removeanti.rds")
 
 ## Gene information table
-genes_description <- read.csv("5576_genes_with_description.txt",sep = "\t")
+genes_description <- read.csv("./data/5576_genes_with_description.txt",sep = "\t")
 genes_description <- genes_description[!duplicated(genes_description[,1]),] # remove row with duplicated GENE.id
 
 ## UMAP
-umap_coordinate <- readRDS(file="umap_coordinate.rds")
+umap_coordinate <- readRDS(file="./data/umap_coordinate.rds")
 umap_coordinate <- as.data.frame(umap_coordinate$layout)
 umap_coordinate$gene <- row.names(umap_coordinate)
 
 ## knn graph
-knn_graph <- readRDS(file="knn_graph_louvain_jaccard_threshold.rds")
+knn_graph <- readRDS(file="./data/knn_graph_louvain_jaccard_threshold.rds")
 
 
 
