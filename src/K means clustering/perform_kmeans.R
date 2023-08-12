@@ -4,7 +4,7 @@
 # factoextra [version 1.0.7]
 # amap [version 0.8-19]
 
-comp_normalized <- readRDS(file="comp_normalized.rds")
+comp_normalized <- readRDS(file="../PCA/comp_normalized.rds")
 
 ## Determine the number of clusters (Elbow method) 
 kmeans_Elbow <- function(data_used,number_of_clusters,nstart) {
@@ -74,3 +74,4 @@ kmeans_clustering <- function(data,number_of_clusters){
 ## Apply k-means with k =12 (change `number_of_clusters` to 9 and 15 for others result in report)
 # perform on expression matrix after dimensionality reduction (comp_normalized)
 kmeans_pca_normalized <- kmeans_clustering(comp_normalized,12)
+# saveRDS(kmeans_pca_normalized,"kmeans_12_vector.rds")
