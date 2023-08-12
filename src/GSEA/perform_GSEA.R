@@ -1,12 +1,12 @@
 ## Create sub directory to save the GSEA result table 
-dir.create("./GSEA_louvain_0.6")
-setwd("./GSEA_louvain_0.6")
+dir.create("./GSEA_louvain_0.6") # change here for different clustering result
+setwd("./GSEA_louvain_0.6") # change here for different clustering result
 getwd()
 
 Matrix_normalized_excluded_removeanti<- readRDS(file="../../Data_Preparation/Matrix_normalized_excluded_removeanti.rds")
 
 ## cluster
-clusters <- readRDS(file="../../Louvain_clustering/louvain_0.6_new.rds")
+clusters <- readRDS(file="../../Louvain_clustering/louvain_0.6_new.rds") # change here for different clustering result
 clusters <- as.character(clusters)
 names(clusters) <- colnames(Matrix_normalized_excluded_removeanti)
 clusters
