@@ -2,7 +2,7 @@
 # nndist from spatstat.geom [version 3.1-0]
 # dbscan [version 1.1-11]
 
-comp_normalized <- readRDS(file="comp_normalized.rds")
+comp_normalized <- readRDS(file="../PCA/comp_normalized.rds")
 
 ## Parameters optimization
 # choose minPts 400 according to rule of thumb
@@ -14,6 +14,8 @@ kdist_DBSCAN <- spatstat.geom::nndist(t(comp_normalized), k=400, by=NULL, method
 sorted_kdist_DBSCAN <- sort(kdist_DBSCAN, decreasing=FALSE)
 
 sorted_kdist_DBSCAN_matrix <- data.frame(k=seq(from=1, to=length(sorted_kdist_DBSCAN)), distance=sorted_kdist_DBSCAN)
+
+library(ggplot2)
 ggplot(sorted_kdist_DBSCAN_matrix) +
   geom_point(aes(x = k, y = distance)) +
   labs(x = "datapoint", y = "distance") + theme_bw()
