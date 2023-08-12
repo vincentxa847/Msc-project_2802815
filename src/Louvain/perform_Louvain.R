@@ -1,8 +1,8 @@
 # get.knn from [FNN version 1.1.3.1]
 # igraph version 1.4.2
 
-comp_normalized <- readRDS(file="comp_normalized.rds")
-Matrix_normalized_excluded_removeanti <- readRDS(file="Matrix_normalized_excluded_removeanti.rds")
+comp_normalized <- readRDS(file="../PCA/comp_normalized.rds")
+Matrix_normalized_excluded_removeanti <- readRDS(file="../Data_Preparation/Matrix_normalized_excluded_removeanti.rds")
 
 x <- t(comp_normalized)
 k <-15
@@ -40,6 +40,6 @@ louvain_cluster <- clusterlouvain$membership
 names(louvain_cluster) <- colnames(Matrix_normalized_excluded_removeanti)
 length(unique(clusterlouvain$membership))
 
-UMAP_visualization(umap_coordinate,louvain_cluster)
+# UMAP_visualization(umap_coordinate,louvain_cluster)
 
 saveRDS(louvain_cluster, file="louvain_0.6_new.rds") # 12 clusters
