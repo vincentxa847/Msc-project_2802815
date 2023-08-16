@@ -1,5 +1,5 @@
 # Msc-project_2802815
-## Exploring clustering methods for summarizing disparate transcriptomic datasets
+## Exploring Clustering Methods for Multi-Experiment Plasmodium falciparum Transcriptomic Datasets
 ### 'Shiny' directory
 Contain the source codes of Shiny app and the necessary files for initializing app 
 
