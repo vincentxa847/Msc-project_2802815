@@ -1,0 +1,21 @@
+<xml>
+  <step class="ApiCommonData::Load::RnaSeqAnalysisEbi">
+    <property name="profileSetName" value="Febrile vs normal temperature RNA-seq"/>
+    <property name="samples">
+      <value>WT 37C|WT_37C_Rep1</value>
+      <value>WT 37C|WT_37C_Rep2</value>
+      <value>WT 41C|WT_41C_Rep1</value>
+      <value>WT 41C|WT_41C_Rep2</value>
+      <value>delta-LRR5-37C|PB31_37C_Rep1</value>
+      <value>delta-LRR5-37C|PB31_37C_Rep2</value>
+      <value>delta-LRR5-41C|PB31_41C_Rep1</value>
+      <value>delta-LRR5-41C|PB31_41C_Rep2</value>
+      <value>delta-DHC-37C|PB4_37C_Rep1</value>
+      <value>delta-DHC-37C|PB4_37C_Rep2</value>
+      <value>delta-DHC-41C|PB4_41C_Rep1</value>
+      <value>delta-DHC-41C|PB4_41C_Rep2</value>
+    </property>
+    <property name="isStrandSpecific" value="1"/>
+  </step>
+</xml>
+

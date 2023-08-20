@@ -1,0 +1,33 @@
+<xml>
+  <step class="ApiCommonData::Load::RnaSeqAnalysisEbi">
+    <property name="profileSetName" value="High resolution intraerythrocytic time course transcriptome by RNA-Seq"/>
+    <property name="samples">
+      <value>4 hrs TP1|4_hrs_TP1</value>
+      <value>6 hrs TP2|6_hrs_TP2</value>
+      <value>8 hrs TP3|8_hrs_TP3</value>
+      <value>10 hrs TP4|10_hrs_TP4</value>
+      <value>12 hrs TP5|12_hrs_TP5</value>
+      <value>14 hrs TP6|14_hrs_TP6</value>
+      <value>16 hrs TP7|16_hrs_TP7</value>
+      <value>18 hrs TP8|18_hrs_TP8</value>
+      <value>22 hrs TP10|22_hrs_TP10</value>
+      <value>24 hrs TP11|24_hrs_TP11</value>
+      <value>26 hrs TP12|26_hrs_TP12</value>
+      <value>28 hrs TP13|28_hrs_TP13</value>
+      <value>30 hrs TP14|30_hrs_TP14</value>
+      <value>32 hrs TP15|32_hrs_TP15</value>
+      <value>34 hrs TP16|34_hrs_TP16</value>
+      <value>36 hrs TP17|36_hrs_TP17</value>
+      <value>38 hrs TP18|38_hrs_TP18</value>
+      <value>40 hrs TP19|40_hrs_TP19</value>
+      <value>42 hrs TP20|42_hrs_TP20</value>
+      <value>44 hrs TP21|44_hrs_TP21</value>
+      <value>46 hrs TP22|46_hrs_TP22</value>
+      <value>48 hrs TP23|48_hrs_TP23</value>
+      <value>50 hrs TP24|50_hrs_TP24</value>
+      <value>52 hrs TP25|52_hrs_TP25</value>
+    </property>
+    <property name="isStrandSpecific" value="0"/>
+  </step>
+</xml>
+

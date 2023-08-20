@@ -1,0 +1,23 @@
+<xml>
+  <step class="ApiCommonData::Load::RnaSeqAnalysisEbi">
+    <property name="profileSetName" value="Intraerythrocytic development cycle transcriptome by UTR-Seq (2020)"/>
+    <property name="samples">
+      <value>0 hr|0_hr_rep1</value>
+      <value>0 hr|0_hr_rep2</value>
+      <value>8 hr|8_hr_rep1</value>
+      <value>8 hr|8_hr_rep2</value>
+      <value>16 hr|16_hr_rep1</value>
+      <value>16 hr|16_hr_rep2</value>
+      <value>24 hr|24_hr_rep1</value>
+      <value>24 hr|24_hr_rep2</value>
+      <value>32 hr|32_hr_rep1</value>
+      <value>32 hr|32_hr_rep2</value>
+      <value>40 hr|40_hr_rep1</value>
+      <value>40 hr|40_hr_rep2</value>
+      <value>48 hr|48_hr_rep1</value>
+      <value>48 hr|48_hr_rep2</value>
+    </property>
+    <property name="isStrandSpecific" value="0"/>
+  </step>
+</xml>
+
