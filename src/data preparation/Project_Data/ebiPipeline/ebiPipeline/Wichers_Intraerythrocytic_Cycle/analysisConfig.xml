@@ -1,0 +1,33 @@
+<xml>
+  <step class="ApiCommonData::Load::RnaSeqAnalysisEbi">
+    <property name="profileSetName" value="Intraerythrocytic development cycle transcriptome (2019)"/>   
+    <property name="samples">
+      <value>young ring 8 hpi|ERR3196808</value>
+      <value>young ring 8 hpi|ERR3196816</value>
+      <value>young ring 8 hpi|ERR3196800</value>
+      <value>late ring_early trophozoite 16 hpi|ERR3196801</value>
+      <value>late ring_early trophozoite 16 hpi|ERR3196809</value>
+      <value>late ring_early trophozoite 16 hpi|ERR3196817</value>
+      <value>mid trophozoite 24 hpi|ERR3196802</value>
+      <value>mid trophozoite 24 hpi|ERR3196810</value>
+      <value>mid trophozoite 24 hpi|ERR3196818</value>
+      <value>late trophozoite 32 hpi|ERR3196803</value>
+      <value>late trophozoite 32 hpi|ERR3196811</value>
+      <value>late trophozoite 32 hpi|ERR3196819</value>
+      <value>early schizont 40 hpi|ERR3196812</value>
+      <value>early schizont 40 hpi|ERR3196804</value>
+      <value>early schizont 40 hpi|ERR3196820</value>
+      <value>schizont 44 hpi|ERR3196805</value>
+      <value>schizont 44 hpi|ERR3196813</value>
+      <value>schizont 44 hpi|ERR3196821</value>
+      <value>late schizont 48 hpi|ERR3196806</value>
+      <value>late schizont 48 hpi|ERR3196814</value>
+      <value>late schizont 48 hpi|ERR3196822</value>
+      <value>purified merozoites 0 hpi|ERR3196807</value>
+      <value>purified merozoites 0 hpi|ERR3196823</value>
+      <value>purified merozoites 0 hpi|ERR3196815</value>
+    </property>
+    <property name="isStrandSpecific" value="0"/>
+  </step>
+</xml>
+
