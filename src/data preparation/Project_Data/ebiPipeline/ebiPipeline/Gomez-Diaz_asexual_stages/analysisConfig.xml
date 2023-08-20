@@ -1,0 +1,20 @@
+<xml>
+  <step class="ApiCommonData::Load::RnaSeqAnalysisEbi">
+    <property name="profileSetName" value="Asexual blood stages, salivary gland sporozoite and midgut oocyst transcriptomes"/>   
+    <property name="samples">
+      <value>asexual blood stages|SRR3055688</value>
+      <value>asexual blood stages|SRR3055689</value>
+      <value>asexual blood stages|SRR3055690</value>
+      <value>asexual blood stages|SRR3055691</value>
+      <value>midgut oocysts|SRR3055681</value>
+      <value>midgut oocysts|SRR3055682</value>
+      <value>midgut oocysts|SRR3055683</value>
+      <value>salivary gland sporozoites|SRR3055684</value>
+      <value>salivary gland sporozoites|SRR3055685</value>
+      <value>salivary gland sporozoites|SRR3055686</value>
+      <value>salivary gland sporozoites|SRR3055687</value>
+    </property>
+    <property name="isStrandSpecific" value="1"/>
+  </step>
+</xml>
+

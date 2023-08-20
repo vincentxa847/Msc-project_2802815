@@ -1,0 +1,15 @@
+<xml>
+  <step class="ApiCommonData::Load::RnaSeqAnalysisEbi">
+    <property name="profileSetName" value="Transcriptomic Analysis of Cultured Sporozoites"/>   
+    <property name="samples">
+      <value>Sporozoites|SRR1041266</value>
+      <value>Sporozoites|SRR1041267</value>
+      <value>Cultured sporozoites|SRR1041268</value>
+      <value>Cultured sporozoites|SRR1041269</value>
+      <value>Asexual blood stage|SRR1041270</value>
+      <value>Asexual blood stage|SRR1041271</value>
+    </property>
+    <property name="isStrandSpecific" value="0"/>
+  </step>
+</xml>
+

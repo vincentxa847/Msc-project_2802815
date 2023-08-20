@@ -1,0 +1,14 @@
+<xml>
+  <step class="ApiCommonData::Load::RnaSeqAnalysisEbi">
+    <property name="profileSetName" value="Transcriptome of sequestration phenotypes"/>   
+    <property name="samples">
+      <value>ITG-ICAM1 binding|SRR12025843</value>
+      <value>3D7-ICAM1 binding|SRR12025844</value>
+      <value>3D7-Hbec-5i binding|SRR12025845</value>
+      <value>HB3-Hbec-5i binding|SRR12025846</value>
+      <value>HB3-CD36 binding|SRR12025847</value>
+    </property>
+    <property name="isStrandSpecific" value="1"/>
+  </step>
+</xml>
+

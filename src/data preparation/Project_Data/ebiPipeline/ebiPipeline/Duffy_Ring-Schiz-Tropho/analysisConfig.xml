@@ -1,0 +1,17 @@
+<xml>
+  <step class="ApiCommonData::Load::RnaSeqAnalysisEbi">
+    <property name="profileSetName" value="Transcriptome during the asexual life cycle"/>   
+    <property name="samples">
+      <value>ring|SRR11292890</value>
+      <value>ring|SRR11292889</value>
+      <value>schizont|SRR11292868</value>
+      <value>schizont|SRR11292860</value>
+      <value>schizont|SRR11292859</value>
+      <value>troph|SRR11292882</value>
+      <value>troph|SRR11292893</value>
+      <value>troph|SRR11292876</value>
+    </property>
+    <property name="isStrandSpecific" value="1"/>
+  </step>
+</xml>
+

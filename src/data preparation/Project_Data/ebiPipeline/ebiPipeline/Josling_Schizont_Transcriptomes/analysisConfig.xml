@@ -1,0 +1,15 @@
+<xml>
+  <step class="ApiCommonData::Load::RnaSeqAnalysisEbi">
+    <property name="profileSetName" value="Trophozoite and Schizont transcriptomes of PfBDP1HA"/>   
+    <property name="samples">
+      <value>Trophozoite|SRR3274041</value>
+      <value>Trophozoite|SRR3274042</value>
+      <value>Schizont|SRR3274043</value>
+      <value>Schizont|SRR3274044</value>
+      <value>Schizont|SRR3274045</value>
+      <value>Schizont|SRR3274046</value>
+    </property>
+    <property name="isStrandSpecific" value="1"/>
+  </step>
+</xml>
+
