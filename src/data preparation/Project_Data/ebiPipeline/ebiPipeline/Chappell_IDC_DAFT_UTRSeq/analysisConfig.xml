@@ -1,0 +1,65 @@
+<xml>
+  <step class="ApiCommonData::Load::RnaSeqAnalysisEbi">
+    <property name="profileSetName" value="DAFT-Seq - 3D7 2020"/>   
+    <property name="samples">
+      <value>0hr 3D7 DAFT-seq|ERR2234550</value>
+      <value>0hr 3D7 DAFT-seq|ERR2234564</value>
+      <value>8hr 3D7 DAFT-seq|ERR2234551</value>
+      <value>8hr 3D7 DAFT-seq|ERR2234565</value>
+      <value>16hr 3D7 DAFT-seq|ERR2234552</value>
+      <value>16hr 3D7 DAFT-seq|ERR2234566</value>
+      <value>24hr 3D7 DAFT-seq|ERR2234553</value>
+      <value>24hr 3D7 DAFT-seq|ERR2234567</value>
+      <value>32hr 3D7 DAFT-seq|ERR2234554</value>
+      <value>32hr 3D7 DAFT-seq|ERR2234568</value>
+      <value>40hr 3D7 DAFT-seq|ERR2234555</value>
+      <value>40hr 3D7 DAFT-seq|ERR2234569</value>
+      <value>48hr 3D7 DAFT-seq|ERR2234556</value>
+      <value>48hr 3D7 DAFT-seq|ERR2234570</value>
+    </property>
+    <property name="isStrandSpecific" value="1"/>
+  </step>
+
+  <step class="ApiCommonData::Load::RnaSeqAnalysisEbi">
+    <property name="profileSetName" value="DAFT-Seq - HB3 2020"/>   
+    <property name="samples">
+      <value>0hr HB3 DAFT-seq|ERR2234536</value>
+      <value>0hr HB3 DAFT-seq|ERR2234543</value>
+      <value>8hr HB3 DAFT-seq|ERR2234537</value>
+      <value>8hr HB3 DAFT-seq|ERR2234544</value>
+      <value>16hr HB3 DAFT-seq|ERR2234538</value>
+      <value>16hr HB3 DAFT-seq|ERR2234545</value>
+      <value>24hr HB3 DAFT-seq|ERR2234539</value>
+      <value>24hr HB3 DAFT-seq|ERR2234546</value>
+      <value>32hr HB3 DAFT-seq|ERR2234540</value>
+      <value>32hr HB3 DAFT-seq|ERR2234547</value>
+      <value>40hr HB3 DAFT-seq|ERR2234541</value>
+      <value>40hr HB3 DAFT-seq|ERR2234548</value>
+      <value>48hr HB3 DAFT-seq|ERR2234542</value>
+      <value>48hr HB3 DAFT-seq|ERR2234549</value>
+    </property>
+    <property name="isStrandSpecific" value="1"/>
+  </step>
+
+  <step class="ApiCommonData::Load::RnaSeqAnalysisEbi">
+    <property name="profileSetName" value="DAFT-Seq - IT 2020"/>   
+    <property name="samples">
+      <value>0hr IT DAFT-seq|ERR2234557</value>
+      <value>0hr IT DAFT-seq|ERR2234571</value>
+      <value>8hr IT DAFT-seq|ERR2234558</value>
+      <value>8hr IT DAFT-seq|ERR2234572</value>
+      <value>16hr IT DAFT-seq|ERR2234559</value>
+      <value>16hr IT DAFT-seq|ERR2234573</value>
+      <value>24hr IT DAFT-seq|ERR2234560</value>
+      <value>24hr IT DAFT-seq|ERR2234574</value>
+      <value>32hr IT DAFT-seq|ERR2234561</value>
+      <value>32hr IT DAFT-seq|ERR2234575</value>
+      <value>40hr IT DAFT-seq|ERR2234562</value>
+      <value>40hr IT DAFT-seq|ERR2234576</value>
+      <value>48hr IT DAFT-seq|ERR2234563</value>
+      <value>48hr IT DAFT-seq|ERR2234577</value>
+    </property>
+    <property name="isStrandSpecific" value="1"/>
+  </step>
+
+</xml>
