@@ -1,0 +1,29 @@
+<xml>
+
+  <step class="ApiCommonData::Load::RnaSeqAnalysisEbi">
+    <property name="profileSetName" value="Ribosome profile and mRNA transcriptome of asexual stages - steady_state"/>
+    <property name="outputFile" value="steady_state"/>
+    <property name="samples">
+        <value>ring 11h|SRR1378555</value>
+        <value>troph 21h|SRR1378556</value>
+        <value>troph 31h|SRR1378557</value>
+        <value>schiz 45h|SRR1378558</value>
+        <value>merozoite|SRR1378559</value>
+    </property>
+    <property name="isStrandSpecific" value="1"/>
+  </step>
+
+  <step class="ApiCommonData::Load::RnaSeqAnalysisEbi">
+    <property name="profileSetName" value="Ribosome profile and mRNA transcriptome of asexual stages - ribosome"/>
+    <property name="outputFile" value="ribosome"/> 
+    <property name="samples">
+        <value>ring 11h|SRR1378560</value>
+        <value>troph 21h|SRR1378561</value>
+        <value>troph 31h|SRR1378562</value>
+        <value>schiz 45h|SRR1378563</value>
+        <value>merozoite|SRR1378564</value>
+    </property>
+    <property name="isStrandSpecific" value="1"/>
+  </step> 
+
+</xml>

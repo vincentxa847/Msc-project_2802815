@@ -1,0 +1,17 @@
+<xml>
+  <step class="ApiCommonData::Load::RnaSeqAnalysisEbi">
+    <property name="profileSetName" value="Transcriptome expression of the intraerythrocytic development cycle transcriptome (2018)"/>   
+    <property name="samples">
+      <value>T05|SRR6055337</value>
+      <value>T10|SRR6055338</value>
+      <value>T15|SRR6055339</value>
+      <value>T20|SRR6055340</value>
+      <value>T25|SRR6055341</value>
+      <value>T30|SRR6055342</value>
+      <value>T35|SRR6055343</value>
+      <value>T40|SRR6055344</value>
+    </property>
+    <property name="isStrandSpecific" value="1"/>
+  </step>
+</xml>
+

@@ -1,0 +1,16 @@
+<xml>
+  <step class="ApiCommonData::Load::RnaSeqAnalysisEbi">
+    <property name="profileSetName" value="Polysomal and steady-state asexual cell cycle stages"/>   
+    <property name="samples">
+      <value>Steady_state ring 0h|SRR835998</value>
+      <value>Polysomal ring 0h|SRR836068</value>
+      <value>Steady_state troph 18h|SRR836066</value>
+      <value>Polysomal troph 18h|SRR836069</value>
+      <value>Steady_state schiz 36h|SRR836067</value>
+      <value>Polysomal schiz 36h|SRR836070</value>
+      <value>Polysomal schiz 36h|SRR836071</value>
+    </property>
+    <property name="isStrandSpecific" value="0"/>
+  </step>
+</xml>
+
