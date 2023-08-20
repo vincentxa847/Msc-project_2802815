@@ -1,0 +1,34 @@
+<xml>
+  <step class="ApiCommonData::Load::RnaSeqAnalysisEbi">
+    <property name="profileSetName" value="IDC in constant temperature and darkness"/>
+    <property name="samples">
+      <value>0 hours|0_hours</value>
+      <value>2 hours|2_hours</value>
+      <value>4 hours|4_hours</value>
+      <value>6 hours|6_hours</value>
+      <value>8 hours|8_hours</value>
+      <value>10 hours|10_hours</value>
+      <value>12 hours|12_hours</value>
+      <value>14 hours|14_hours</value>
+      <value>16 hours|16_hours</value>
+      <value>18 hours|18_hours</value>
+      <value>20 hours|20_hours</value>
+      <value>22 hours|22_hours</value>
+      <value>24 hours|24_hours</value>
+      <value>26 hours|26_hours</value>
+      <value>28 hours|28_hours</value>
+      <value>30 hours|30_hours</value>
+      <value>32 hours|32_hours</value>
+      <value>34 hours|34_hours</value>
+      <value>36 hours|36_hours</value>
+      <value>38 hours|38_hours</value>
+      <value>40 hours|40_hours</value>
+      <value>42 hours|42_hours</value>
+      <value>44 hours|44_hours</value>
+      <value>46 hours|46_hours</value>
+      <value>48 hours|48_hours</value>
+    </property>
+    <property name="isStrandSpecific" value="1"/>
+  </step>
+</xml>
+

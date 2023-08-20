@@ -1,0 +1,15 @@
+<xml>
+  <step class="ApiCommonData::Load::RnaSeqAnalysisEbi">
+    <property name="profileSetName" value="Oocyst and salivary gland sporozoite transcriptome comparison in P. falciparum"/>   
+    <property name="samples">
+      <value>Oocyst Sporozoites|SRR7059090</value>
+      <value>Oocyst Sporozoites|SRR7059091</value>
+      <value>Oocyst Sporozoites|SRR7059092</value>
+      <value>Salivary Gland Sporozoites|SRR7059093</value>
+      <value>Salivary Gland Sporozoites|SRR7059094</value>
+      <value>Salivary Gland Sporozoites|SRR7059095</value>
+    </property>
+    <property name="isStrandSpecific" value="1"/>
+  </step>
+</xml>
+

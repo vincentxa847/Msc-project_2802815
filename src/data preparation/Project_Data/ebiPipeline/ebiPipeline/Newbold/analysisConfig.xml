@@ -1,0 +1,16 @@
+<xml>
+  <step class="ApiCommonData::Load::RnaSeqAnalysisEbi">
+    <property name="profileSetName" value="P. falciparum Newbold mRNA Seq data"/>   
+    <property name="samples">
+      <value>0 hours|ERR006184</value>
+      <value>8 hours|ERR006185</value>
+      <value>16 hours|ERR006186</value>
+      <value>24 hours|ERR006187</value>
+      <value>32 hours|ERR006188</value>
+      <value>40 hours|ERR006189</value>
+      <value>48 hours|ERR006190</value>
+    </property>
+    <property name="isStrandSpecific" value="0"/>
+  </step>
+</xml>
+
