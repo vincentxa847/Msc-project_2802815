@@ -1,0 +1,18 @@
+<xml>
+
+<globalReferencable>
+    <property name="profileSetName" value="pfal3d7 Otto FRT Seq data"/>   
+    <property name="samples">
+          <value>Pf RNA-Seq - Sanger FRT log2 Newbold Berriman labs|Sanger_FRT</value>       
+    </property>
+</globalReferencable>
+
+ <step class="ApiCommonData::Load::RnaSeqAnalysis">
+    <property name="profileSetName" isReference="1" value="$globalReferencable->{profileSetName}" />   
+    <property name="samples" isReference="1" value="$globalReferencable->{samples}" />
+    <property name="isStrandSpecific" value="1"/>    
+  </step>
+
+</xml>
+
+

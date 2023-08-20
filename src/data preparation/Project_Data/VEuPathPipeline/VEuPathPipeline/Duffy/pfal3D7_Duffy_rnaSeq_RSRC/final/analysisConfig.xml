@@ -1,0 +1,17 @@
+<xml>
+
+ <globalReferencable>
+   <property name="profileSetName" value="P. falciparum Duffy"/> 
+    <property name="samples">
+          <value>PL01|PL01</value> 
+	  <value>PL02|PL02</value>
+          <value>3D7|3D7</value>
+    </property>
+ </globalReferencable>
+
+ <step class="ApiCommonData::Load::RnaSeqAnalysis">
+    <property name="profileSetName" isReference="1" value="$globalReferencable->{profileSetName}" />    
+    <property name="samples" isReference="1" value="$globalReferencable->{samples}" />
+  </step>
+
+</xml>
