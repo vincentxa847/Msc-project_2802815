@@ -1,0 +1,18 @@
+<xml>
+  <step class="ApiCommonData::Load::RnaSeqAnalysisEbi">
+    <property name="profileSetName" value="Ring, Oocyst and Sporozoite Transcriptomes"/>   
+    <property name="samples">
+      <value>Sporozoite|SRR5146307</value>
+      <value>Sporozoite|SRR5146305</value>
+      <value>Sporozoite|SRR5146308</value>
+      <value>Sporozoite|SRR5146306</value>
+      <value>Oocyst|SRR5150407</value>
+      <value>Oocyst|SRR5150405</value>
+      <value>Oocyst|SRR5150408</value>
+      <value>Ring|SRR5146379</value>
+      <value>Ring|SRR5146380</value>
+    </property>
+    <property name="isStrandSpecific" value="1"/>
+  </step>
+</xml>
+

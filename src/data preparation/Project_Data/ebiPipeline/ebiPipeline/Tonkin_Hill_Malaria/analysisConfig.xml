@@ -1,0 +1,53 @@
+<xml>
+  <step class="ApiCommonData::Load::RnaSeqAnalysisEbi">
+    <property name="profileSetName" value="Transcriptome in severe vs uncomplicated malaria"/>   
+    <property name="samples">
+      <value>IFC63_uncomplicated|ERR2028828</value>
+      <value>IFC66_uncomplicated|ERR2028829</value>
+      <value>IFD6_uncomplicated|ERR2028830</value>
+      <value>IFD8_uncomplicated|ERR2028832</value>
+      <value>IFM047_uncomplicated|ERR2028836</value>
+      <value>IFM-049_uncomplicated|ERR2028834</value>
+      <value>IFM050_uncomplicated|ERR2028838</value>
+      <value>IFM054_uncomplicated|ERR2028840</value>
+      <value>IFM058_uncomplicated|ERR2028842</value>
+      <value>IFM060_uncomplicated|ERR2028844</value>
+      <value>IFM061_uncomplicated|ERR2028846</value>
+      <value>IFM12_uncomplicated|ERR2028848</value>
+      <value>IFM14_uncomplicated|ERR2028850</value>
+      <value>IFM21_uncomplicated|ERR2028852</value>
+      <value>IFM23_uncomplicated|ERR2028854</value>
+      <value>IFM24_uncomplicated|ERR2028856</value>
+      <value>IFM26_uncomplicated|ERR2028858</value>
+      <value>IFM27_uncomplicated|ERR2028860</value>
+      <value>IFM53_uncomplicated|ERR2028862</value>
+      <value>IFM56_uncomplicated|ERR2028864</value>
+      <value>IFM57_uncomplicated|ERR2028863</value>
+      <value>SFC-023_severe|ERR2028805</value>
+      <value>SFC-025_severe|ERR2028806</value>
+      <value>SFC13_severe|ERR2028809</value>
+      <value>SFC14_severe|ERR2028810</value>
+      <value>SFC15_severe|ERR2028811</value>
+      <value>SFC16_severe|ERR2028812</value>
+      <value>SFC17_severe|ERR2028813</value>
+      <value>SFC-18_severe|ERR2028807</value>
+      <value>SFC19_severe|ERR2028814</value>
+      <value>SFC-21_severe|ERR2028808</value>
+      <value>SFC22_severe|ERR2028815</value>
+      <value>SFD1-CM_severe|ERR2028816</value>
+      <value>SFM-1_severe|ERR2028818</value>
+      <value>SFM-10_severe|ERR2028817</value>
+      <value>SFM-3_severe|ERR2028819</value>
+      <value>SFM-5_severe|ERR2028820</value>
+      <value>SFM-6_severe|ERR2028821</value>
+      <value>SFM-7_severe|ERR2028822</value>
+      <value>SFM-8_severe|ERR2028823</value>
+      <value>SFM9_severe|ERR2028824</value>
+      <value>SFU2_severe|ERR2028826</value>
+      <value>SFU-3_severe|ERR2028825</value>
+      <value>SXC2_severe|ERR2028827</value>
+    </property>
+    <property name="isStrandSpecific" value="1"/>
+  </step>
+</xml>
+

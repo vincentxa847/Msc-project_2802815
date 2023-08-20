@@ -1,0 +1,13 @@
+<xml>
+  <step class="ApiCommonData::Load::RnaSeqAnalysisEbi">
+    <property name="profileSetName" value="Strand specific transcriptome of the intraerythrocytic developmental cycle"/>   
+    <property name="samples">
+      <value>IDC 10hr|ERR174301</value>
+      <value>IDC 20hr|ERR185969</value>
+      <value>IDC 30hr|ERR185970</value>
+      <value>IDC 40hr|ERR185971</value>
+    </property>
+    <property name="isStrandSpecific" value="1"/>
+  </step>
+</xml>
+

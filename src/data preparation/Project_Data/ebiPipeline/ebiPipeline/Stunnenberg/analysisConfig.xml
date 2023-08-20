@@ -1,0 +1,25 @@
+<xml>
+  <step class="ApiCommonData::Load::RnaSeqAnalysisEbi">
+    <property name="profileSetName" value="pfal3D7_Stunnenberg_pi_time_series"/>   
+    <property name="samples">
+      <value>Hour 5|SRR065639</value>
+      <value>Hour 10|SRR065640</value>
+      <value>Hour 15|SRR065641</value>
+      <value>Hour 20|SRR065642</value>
+      <value>Hour 25|SRR065643</value>
+      <value>Hour 30|SRR065644</value>
+      <value>Hour 35|SRR065645</value>
+      <value>Hour 40|SRR065646</value>
+    </property>
+    <property name="isStrandSpecific" value="0"/>
+  </step>
+
+  <step class="CBIL::TranscriptExpression::DataMunger::ScaleProfile">
+    <property name="profileSetName" value="pfal3D7_Stunnenberg_pi_time_series - scaled" />    
+    <property name="profileFile" value="profiles.genes.htseq-union.unstranded.tpm"/>
+    <property name="outputFile" value="profilesScaled.genes.htseq-union.unstranded.tpm"/>    
+    <property name="displaySuffix" value=" [htseq-union - unstranded - tpm - unique]"/>
+</step> 
+
+</xml>
+
