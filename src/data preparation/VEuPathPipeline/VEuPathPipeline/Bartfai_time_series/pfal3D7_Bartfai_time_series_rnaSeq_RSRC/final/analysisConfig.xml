@@ -1,0 +1,43 @@
+<xml>
+
+  <globalReferencable>
+    <property name="profileSetName" value="Transcriptome expression of the intraerythrocytic cycle" />
+    <property name="samples">
+        <value>40-5 hours post-invasion|T5</value>
+        <value>2-10 hours post-invasion|T10</value>
+        <value>7-15 hours post-invasion|T15</value>
+        <value>12-20 hours post-invasion|T20</value>
+        <value>17-25 hours post-invasion|T25</value>
+        <value>22-30 hours post-invasion|T30</value>
+        <value>27-35 hours post-invasion|T35</value>
+        <value>32-40 hours post-invasion|T40</value>
+    </property>
+  </globalReferencable>
+
+
+
+  <step class="ApiCommonData::Load::RnaSeqAnalysis">
+    <property name="profileSetName" isReference="1" value="$globalReferencable->{profileSetName}" /> 
+    <property name="samples" isReference="1" value="$globalReferencable->{samples}" />
+    <property name="isStrandSpecific" value="1"/> 
+  </step>
+
+<!--for GSNAP, we now have transcript level files (profiles.isoforms.*) and gene level files (profiles.genes.*)--> 
+<!--Corresponding to RUM runner, min=unique, diff=nu -->
+
+
+<step class="CBIL::TranscriptExpression::DataMunger::ScaleProfile">
+    <property name="profileSetName" value="Transcriptome expression of the intraerythrocytic cycle - scaled" />
+    <property name="profileFile" value="profiles.genes.htseq-union.firststrand.tpm"/>
+    <property name="outputFile" value="profilesScaled.genes.htseq-union.firststrand.tpm"/>
+    <property name="displaySuffix" value=" [htseq-union - firststrand - tpm - unique]"/>
+</step>
+
+<step class="CBIL::TranscriptExpression::DataMunger::ScaleProfile">
+    <property name="profileSetName" value="Transcriptome expression of the intraerythrocytic cycle - scaled" />
+    <property name="profileFile" value="profiles.genes.htseq-union.secondstrand.tpm"/>
+    <property name="outputFile" value="profilesScaled.genes.htseq-union.secondstrand.tpm"/>
+    <property name="displaySuffix" value=" [htseq-union - secondstrand - tpm - unique]"/>
+</step>
+
+</xml>
