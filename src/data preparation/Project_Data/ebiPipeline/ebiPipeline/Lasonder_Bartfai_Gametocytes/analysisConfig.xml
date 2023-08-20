@@ -1,0 +1,12 @@
+<xml>
+  <step class="ApiCommonData::Load::RnaSeqAnalysisEbi">
+    <property name="profileSetName" value="Gametocyte transcriptomes"/>   
+    <property name="samples">
+      <value>male gametocyte|SRR2981459</value>
+      <value>male gametocyte|SRR2981461</value>
+      <value>female gametocyte|SRR2981460</value>
+    </property>
+    <property name="isStrandSpecific" value="1"/>
+  </step>
+</xml>
+
