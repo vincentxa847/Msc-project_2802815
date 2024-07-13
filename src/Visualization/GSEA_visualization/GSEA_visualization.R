@@ -1,5 +1,5 @@
 ## From the view of data sets
-# Fetch all available sets
+# Fetch all available sets (contain the sample experiment name determined manually)
 clinical_isolate <- readRDS("./Datasets_directory/clinical_isolate.rds")
 oocyst <- readRDS("./Datasets_directory/oocyst.rds")
 gametocyte <- readRDS("./Datasets_directory/gametocyte.rds")
