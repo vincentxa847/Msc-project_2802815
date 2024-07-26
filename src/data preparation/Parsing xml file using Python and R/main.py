@@ -34,45 +34,20 @@ def srr():
 SRR = srr()
 
 ## For the replicate, add the replicate number to make it unique
-# replicate this process for three times
-i = []
-k = []
-for check in SRR:
-    two_string = check.split("|")
-    condition = two_string[0]  # condition (meaningful), not unique
-    to_replace = two_string[1]  # srr and err, unique
-    if condition in i:
-        add_mark_condition = condition + "__2"
-        k.append(add_mark_condition + "|" +to_replace)
-    else :
-        k.append(condition + "|" + to_replace)
-
-    i.append(condition)
-j = []
-z = []
-for second_check in k :
-    two_string = second_check.split("|")
-    condition = two_string[0]  # condition (meaningful), not unique
-    to_replace = two_string[1]  # srr and err, unique
-    if condition in j:
-        add_mark_condition = condition.replace("__2","__3")
-        z.append(add_mark_condition + "|" + to_replace)
-    else:
-        z.append(condition + "|" + to_replace)
-    j.append(condition)
-
-n = []
+condition_counts = {} # condition is key and its count is value
 final = []
-for third_check in z :
-    two_string = third_check.split("|")
-    condition = two_string[0]  # condition (meaningful), not unique
-    to_replace = two_string[1]  # srr and err, unique
-    if condition in n:
-        add_mark_condition = condition.replace("__3","__4")
-        final.append(add_mark_condition + "|" + to_replace)
+
+for check in SRR:
+    condition, unique_id = check.split("|") # "condition" (meaningful), not unique. "to replace" srr and err, unique
+    if condition in condition_counts:
+        condition_counts[condition] += 1
     else:
-        final.append(condition + "|" + to_replace)
-    n.append(condition)
+        condition_counts[condition] = 1
+
+    # Create a unique condition string with replicate number if needed
+    unique_condition = condition if condition_counts[condition] == 1 else f"{condition}__{condition_counts[condition]}"
+    final.append(f"{unique_condition}|{unique_id}")
+    
 
 # Open a file in write mode
 with open('SRRname.txt', 'w') as file:
